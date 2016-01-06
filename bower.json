@@ -1,0 +1,17 @@
+{
+  "name": "mydissertationproduct",
+  "version": "0.0.0",
+  "authors": [
+    "Frederik Borgbjerg"
+  ],
+  "description": "my bower.json file",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "angular": "~1.4.8",
+    "angular-route": "~1.4.8"
+  },
+   "install": {
+    "path": "client/libs"
+  }
+}

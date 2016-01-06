@@ -1,0 +1,50 @@
+<div class="container">          
+   <center> 
+
+    <div ng-hide="showme">
+    <h3>In order to enter The Chat Room</h3>
+	<p>Please enter your username below!</p>
+    <input  type="text" ng-model="name"><br><br>
+    <button class="btn btn-success lg" ng-click="UserOnline(name);">Submit Username</button>
+    </div>
+    
+    <div ng-show="showme">
+    <h1>Welcome to the Chat Room!!</h1>
+    <h3>Your Username is: {{name}}</h3><br>
+    </div>
+      </center>  
+
+	<div class="col-xs-8 chat-window" ng-show="showme">
+    	<center>	<strong><h4>Chat Window</h4></strong> </center>
+    	<hr>
+        <ul>
+            <li ng-repeat="message in messages">
+                <span class="username">{{message.username}}</span>
+                <span class="message">{{message.message}}</span>
+            </li>
+        </ul>
+    </div>
+     <div class="col-xs-4 user-window" ng-show="showme">
+    	<center>	<strong><h4>Users Online</h4></strong> </center>
+    	<hr>
+        <ul>
+            <li class="onlineuser" ng-repeat="user in users">{{user}}</li>            
+        </ul>
+    </div>
+
+
+<div class="container">
+<center><div class="row" ng-show="showme">
+    <form class="form-horizontal">
+        <div class="form-group">
+            <div class="col-sm-8">
+                <center><input type="text" class="form-control" id="chatInput" placeholder="Enter Text Here..." ng-model="msg">
+            </div>
+            <div class="col-sm-3">
+                <button type="submit" class="btn btn-warning" ng-click="sendMessage(msg)">Send Message</button>
+            </div>
+        </div>
+    </form>
+</div></center>
+</div>
+</div>

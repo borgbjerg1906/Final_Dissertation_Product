@@ -1,0 +1,50 @@
+.TopNav{
+	background-color: #38b44a !important;
+	border: 2px solid darkgreen !important;
+	margin-top:20px;
+
+}
+.navbar-brand{
+	color: white !important;
+	
+} 
+.navbar-default .navbar-nav>li>a{
+	color: white !important;
+	
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+background-color: lightgreen !important;
+
+}
+
+.user-window{
+    border-left: 2px solid black;
+    height: 300px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+
+   
+}
+.onlineuser{
+	font-weight: bold;
+	color: green;
+	text-align: center;
+}
+.username{
+    color: red;
+    font-weight: bold;
+}
+
+.chat-window{
+    height: 300px;
+    overflow-y: auto;
+    overflow-x: auto;
+    border: 2px solid black;
+    margin-bottom: 10px;
+
+}
+
+ul {
+    list-style-type: none;
+}

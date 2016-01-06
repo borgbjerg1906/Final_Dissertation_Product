@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="DissertationApp">
+  <head>
+    <meta name="description" content="This is my product for the dissertation product.">
+    <meta name="author" content="Frederik Borgbjerg">
+    <title>My Dissertation Product</title>
+
+    <!-- Bootstrap core CSS & custom stylesheet-->
+    <link href="libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">   
+  </head>
+  <body>
+    <div class="container">
+      
+      <!-- Static navbar -->
+      <nav class="navbar navbar-default TopNav" ng-controller="navCtrl">
+        <div class="container-fluid">
+          <div class="navbar-header">          
+            <a class="navbar-brand" href="#">Dissertation Product</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li ng-class="{active: isActive('/home')}"><a href="#/home">Home</a></li>
+              <li ng-class="{active: isActive('/about')}"><a href="#/about">About</a></li>
+              <li ng-class="{active: isActive('/chat')}"><a href="#/chat">Chat Room</a></li>
+            </ul>           
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+
+      <!--partial pages will be loaded, inside the ng-view div-->
+      <div class="container">
+        <div ng-view></div>
+      </div>
+
+    </div> <!-- /container -->         
+    
+<!-- Bootstrap -->
+
+<!-- AngularJS & Angular-Route Imported -->
+<script src="libs/angular/angular.js"></script>
+<script src="libs/angular-route/angular-route.js"></script>
+
+<!-- Socket.io -->
+<script src="https://cdn.socket.io/socket.io-1.3.7.js"></script>
+<script src="libs/angular-socket-io/socket.js"></script>
+
+<!-- AngularJS Main App file  -->
+<script src="angular/app.js"></script>
+
+<!-- AngularJS Controllers -->
+<script src="angular/controllers/navCtrl.js"></script>  
+<script src="angular/controllers/homeCtrl.js"></script>
+<script src="angular/controllers/aboutCtrl.js"></script>  
+<script src="angular/controllers/chatCtrl.js"></script> 
+<!-- AngularJS Services -->
+<script src="angular/services/chatSocket.js"></script>
+ 
+
+
+</body>
+</html>
+
+
