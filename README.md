@@ -5,3 +5,6 @@ One of these views is a chat room, that uses socket.io to create real time commu
 The SPA requires NodeJS to work. If you have Node and you have downloaded the code.  
 first run "NPM install" to install the node modules used.
 then run "node server" in cmd prompt in order to run the server.
+
+
+...
